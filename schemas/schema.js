@@ -2,8 +2,7 @@
 import createSchema from 'part:@sanity/base/schema-creator'
 
 // Then import schema types from any plugins that might expose them
-import schemaTypes from 'all:part:@sanity/base/schema-type'
-import post from './post.js'
+import schemaTypes from 'all:part:@sanity/base/schema-type'	
 import competences from './competences.js'
 import brandwall from './brandwall.js'
 import CaseImage from './CaseImage'
@@ -14,7 +13,6 @@ export default createSchema({
   // Then proceed to concatenate our our document type
   // to the ones provided by any plugins that are installed
   types: schemaTypes.concat([
-    post,
     competences,
     brandwall,
     CaseImage
