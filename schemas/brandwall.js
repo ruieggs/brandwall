@@ -8,6 +8,26 @@ export default {
 			name: 'title',
 			type: 'string'
 		},
+    {
+      title: 'Slides',
+      name: 'slides',
+      type: 'array',
+      of: [
+        {
+          type: 'reference',
+          to: [ {
+            type: 'caseImage'
+          }],
+          title: 'Case Images',
+          name: 'caseImages'
+
+        }]
+    },
+		{
+			title: 'Duration',
+			name: 'duration',
+			type: 'number'
+		},
 		{
 		 	title: 'Image 1',
       		name: 'image1',
