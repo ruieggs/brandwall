@@ -17,7 +17,11 @@ export default {
           type: 'reference',
           to: [ {
             type: 'caseImage'
-          }],
+          },
+          {
+          	type: 'video'
+          }
+          ],
           title: 'Case Images',
           name: 'caseImages'
 
